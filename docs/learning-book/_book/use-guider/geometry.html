@@ -1,0 +1,592 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>JTS-geometry · GeoTools使用文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="shengshi_feiyang@yeah.net">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-cuav-chapters/cuav-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-multipart/multipart.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-fexa/fexa.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="de-9im.html" />
+    
+    
+    <link rel="prev" href="feature.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+	<div class="header-inner">
+		<!-- LOGO -->
+		<div class="logo"></div>
+		<span class="title"></span>
+
+		<!-- Search -->
+		
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+
+		<!-- Nav -->
+		<ul class="header-nav">
+			<li>
+				<a href="https://geotools.org/" target="_blank">官网文档</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="book-summary">
+		<div class="book-summary-title">文档目录</div>
+		
+		
+		<nav role="navigation">
+			
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../ogc/">
+            
+                <a href="../ogc/">
+            
+                    
+                    OGC基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../ogc/opengis.html">
+            
+                <a href="../ogc/opengis.html">
+            
+                    
+                    opengis简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../ogc/wms.html">
+            
+                <a href="../ogc/wms.html">
+            
+                    
+                    wms服务简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../ogc/wfs.html">
+            
+                <a href="../ogc/wfs.html">
+            
+                    
+                    wfs服务简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../ogc/wcs.html">
+            
+                <a href="../ogc/wcs.html">
+            
+                    
+                    wcs服务简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../ogc/wmts.html">
+            
+                <a href="../ogc/wmts.html">
+            
+                    
+                    WMTS服务简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../ogc/front.html">
+            
+                <a href="../ogc/front.html">
+            
+                    
+                    前端显示组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    GeoTools基本使用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="standards-covered.html">
+            
+                <a href="standards-covered.html">
+            
+                    
+                    涵盖的标准
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="created.html">
+            
+                <a href="created.html">
+            
+                    
+                    创建GeoTools
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="feature.html">
+            
+                <a href="feature.html">
+            
+                    
+                    创建Feature
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.4" data-path="geometry.html">
+            
+                <a href="geometry.html">
+            
+                    
+                    JTS-geometry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="de-9im.html">
+            
+                <a href="de-9im.html">
+            
+                    
+                    DE-9IM模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="geometry-operator.html">
+            
+                <a href="geometry-operator.html">
+            
+                    
+                    geometry操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../app-integration/">
+            
+                <a href="../app-integration/">
+            
+                    
+                    GeoTools与应用集成
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+		</nav>
+		
+		
+	</div>
+
+	<!-- Content nav -->
+	<div class="book-anchor">
+		<div class="book-anchor-title">在这篇文章中:</div>
+		<div class="book-anchor-body">
+
+		</div>
+	</div>
+
+	<div class="book-body">
+		
+		<div class="body-inner">
+			
+			
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >JTS-geometry</a>
+    </h1>
+</div>
+
+
+
+
+			<div class="page-wrapper" tabindex="-1" role="main">
+				<div class="page-inner">
+					
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+					<section class="normal markdown-section">
+						
+						<h1 id="jts-geometry&#x4F7F;&#x7528;&#x8BF4;&#x660E;">JTS-Geometry&#x4F7F;&#x7528;&#x8BF4;&#x660E;</h1>
+<h2 id="jts-geometry&#x7ED3;&#x6784;&#x56FE;">JTS-geometry&#x7ED3;&#x6784;&#x56FE;</h2>
+<p><img src="../assets/geometry1.png" alt="&#x7ED3;&#x6784;&#x56FE;"></p>
+<h2 id="geometrycollections">GeometryCollections</h2>
+<p><img src="../assets/geometry_collection.png" alt="&#x7ED3;&#x6784;&#x56FE;"></p>
+<h2 id="geometryfactory">GeometryFactory</h2>
+<p><img src="../assets/geometry_factory.png" alt="&#x7ED3;&#x6784;&#x56FE;"></p>
+<h2 id="geotools-extends">GeoTools extends</h2>
+<p>&#x66F2;&#x9762;&#x6269;&#x5C55;</p>
+<p><img src="../assets/geometry2.png" alt="&#x7ED3;&#x6784;&#x56FE;"></p>
+<h2 id="&#x521B;&#x5EFA;&#x70B9;">&#x521B;&#x5EFA;&#x70B9;</h2>
+<pre><code> //&#x901A;&#x8FC7; coordinate&#x521B;&#x5EFA;
+ GeometryFactory geometryFactory = JTSFactoryFinder.getGeometryFactory();
+
+ Coordinate coord = new Coordinate(1, 1);
+ Point point = geometryFactory.createPoint(coord);
+
+ //&#x901A;&#x8FC7;wkt &#x521B;&#x5EFA;
+ GeometryFactory geometryFactory = JTSFactoryFinder.getGeometryFactory();
+
+ WKTReader reader = new WKTReader(geometryFactory);
+ Point point = (Point) reader.read(&quot;POINT (1 1)&quot;);
+</code></pre><h2 id="&#x521B;&#x5EFA;&#x7EBF;">&#x521B;&#x5EFA;&#x7EBF;</h2>
+<pre><code>GeometryFactory geometryFactory = JTSFactoryFinder.getGeometryFactory();
+
+Coordinate[] coords  =
+ new Coordinate[] {new Coordinate(0, 2), new Coordinate(2, 0), new Coordinate(8, 6) };
+
+LineString line = geometryFactory.createLineString(coordinates);
+
+//wkt&#x65B9;&#x5F0F;
+GeometryFactory geometryFactory = JTSFactoryFinder.getGeometryFactory();
+
+WKTReader reader = new WKTReader( geometryFactory );
+LineString line = (LineString) reader.read(&quot;LINESTRING(0 2, 2 0, 8 6)&quot;);
+</code></pre><h2 id="&#x521B;&#x5EFA;&#x591A;&#x8FB9;&#x5F62;">&#x521B;&#x5EFA;&#x591A;&#x8FB9;&#x5F62;</h2>
+<pre><code>GeometryFactory geometryFactory = JTSFactoryFinder.getGeometryFactory();
+
+Coordinate[] coords  =
+   new Coordinate[] {new Coordinate(4, 0), new Coordinate(2, 2),
+                     new Coordinate(4, 4), new Coordinate(6, 2), new Coordinate(4, 0) };
+
+LinearRing ring = geometryFactory.createLinearRing( coords );
+LinearRing holes[] = null; // use LinearRing[] to represent holes
+Polygon polygon = geometryFactory.createPolygon(ring, holes );
+
+//wkt&#x65B9;&#x5F0F;
+GeometryFactory geometryFactory = JTSFactoryFinder.getGeometryFactory( null );
+
+WKTReader reader = new WKTReader( geometryFactory );
+Polygon polygon = (Polygon) reader.read(&quot;POLYGON((20 10, 30 0, 40 10, 30 20, 20 10))&quot;);
+</code></pre><p>Geometry relationships are represented by the following functions returning true or false:</p>
+<ul>
+<li><code>disjoint(Geometry)</code> - same as &#x201C;not&#x201D; intersects</li>
+<li><code>touches(Geometry)</code> - geometry have to just touch, crossing or overlap will not work</li>
+<li><code>intersects(Geometry)</code></li>
+<li><code>crosses(Geometry)</code></li>
+<li><code>within(Geometry)</code> - geometry has to be full inside</li>
+<li><code>contains(Geometry)</code></li>
+<li><code>overlaps(Geometry)</code> - has to actually overlap the edge, being within or touching will not work</li>
+<li><code>covers(Geometry)</code></li>
+<li><code>coveredBy(Geometry)</code></li>
+<li><code>relate(Geometry, String)</code> - allows general check of relationship see <a href="https://docs.geotools.org/latest/userguide/library/jts/dim9.html" target="_blank">dim9 page</a></li>
+<li><code>relate(Geometry)</code></li>
+</ul>
+<p>To actually determine a shape based on two geometry:</p>
+<ul>
+<li><code>intersection(Geometry)</code></li>
+<li><code>union(Geometry)</code></li>
+<li><code>difference(Geometry)</code></li>
+<li><code>symDifference(Geometry)</code></li>
+</ul>
+<p>Some of the most helpful functions are:</p>
+<ul>
+<li><code>distance(Geometry)</code></li>
+<li><code>buffer(double)</code> - used to buffer the edge of a geometry to produce a polygon</li>
+<li><code>union()</code> - used on a geometry collection to produce a single geometry</li>
+</ul>
+<p>The three most difficult methods are here (they will be discussed in detail):</p>
+<ul>
+<li><code>equals(Object)</code> - normal Java equals which checks that the two objects are the same instance</li>
+<li><code>equals(Geometry)</code> - checks if the geometry is the same shape</li>
+<li><code>equalsExact(Geometry)</code> - check if the data structure is the same</li>
+</ul>
+<p>There are some book keeping methods to help discovery how the geometry was constructed:</p>
+<ul>
+<li><code>getGeometryFactory()</code></li>
+<li><code>getPreceisionModel()</code></li>
+<li><code>toText()</code> - the WKT representation of the Geometry</li>
+<li><code>getGeoemtryType()</code> - factory method called (i.e. <code>point</code>, <code>linestring</code>, etc..)</li>
+</ul>
+<p>A couple of methods are there to store your developer information:</p>
+<ul>
+<li><code>getSRID()</code> - stores the &#x201C;spatial reference id&#x201D;, used as an external key when working with databases</li>
+<li><code>getUserData()</code> - intended to be used by developers, a best practice is to store a <code>java.util.Map</code>. GeoTools will occasionally use this field to store a <code>srsName</code> or full <code>CoordinateReferenceSystem</code>.</li>
+</ul>
+
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
+						
+					</section>
+					
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+				</div>
+			</div>
+			
+		</div>
+
+		
+		
+		<a href="feature.html" class="navigation navigation-prev " aria-label="Previous page: 创建Feature">
+			<i class="fa fa-angle-left"></i>
+		</a>
+		
+		
+		<a href="de-9im.html" class="navigation navigation-next " aria-label="Next page: DE-9IM模型">
+			<i class="fa fa-angle-right"></i>
+		</a>
+		
+		
+		
+	</div>
+	<script>
+		var gitbook = gitbook || [];
+		gitbook.push(function() {
+			gitbook.page.hasChanged({"page":{"title":"JTS-geometry","level":"1.3.4","depth":2,"next":{"title":"DE-9IM模型","level":"1.3.5","depth":2,"path":"use-guider/de-9im.md","ref":"use-guider/de-9im.md","articles":[]},"previous":{"title":"创建Feature","level":"1.3.3","depth":2,"path":"use-guider/feature.md","ref":"use-guider/feature.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-fontsettings","back-to-top-button","copy-code-button","cuav-chapters","heading-anchors","theme-fexa","popup","splitter","multipart@0.3.0"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"splitter":{},"search":{},"cuav-chapters":{"summaryMaxSize":20,"useLimitExpanded":false},"popup":{},"multipart":{},"theme-fexa":{"search-placeholder":"输入关键字搜索","logo":"./logo.png","favicon":"./favicon.ico"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"heading-anchors":{},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"shengshi_feiyang@yeah.net","pdf":{"pageNumbers":true,"fontSize":18,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":30,"left":30,"top":30,"bottom":50}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"themeFexa":{"nav":[{"url":"https://geotools.org/","target":"_blank","name":"官网文档"}]}},"title":"GeoTools使用文档","gitbook":"*"},"file":{"path":"use-guider/geometry.md","mtime":"2020-12-16T07:49:02.057Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-31T07:07:14.395Z"},"basePath":"..","book":{"language":""}});
+		});
+	</script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-cuav-chapters/cuav-chapters.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-fexa/fexa.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,45 @@
+{
+        "title" : "GeoTools使用文档",
+		"author" : "shengshi_feiyang@yeah.net",
+        "pdf": {
+            "pageNumbers": true,
+            "fontSize": 18,
+            "paperSize": "a4",
+            "margin": {
+              "right": 30,
+              "left": 30,
+              "top": 30,
+              "bottom": 50
+            }
+        },
+		"plugins": [
+			"-sharing",
+			"-fontsettings",
+			"back-to-top-button",
+			"copy-code-button",
+			 "cuav-chapters",
+			"heading-anchors",
+			"theme-fexa",
+			 "popup",
+			 "splitter",
+			 "multipart@0.3.0"
+        ],
+		"variables": {
+			"themeFexa":{
+				"nav":[
+					{
+						"url":"https://geotools.org/",
+						"target":"_blank",
+						"name": "官网文档"
+					}
+				]
+			}
+		},
+		"pluginsConfig": {
+			"theme-fexa":{
+				"search-placeholder":"输入关键字搜索", 
+				"logo":"./logo.png",
+				"favicon": "./favicon.ico" 
+			}
+		}
+}
