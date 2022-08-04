@@ -22,14 +22,15 @@ public class FeatureTest {
 
         GeometryFactory geometryFactory = JTSFactoryFinder.getGeometryFactory();
 
-        SimpleFeatureType featureType = DataUtilities.createType(
+       /* SimpleFeatureType featureType = DataUtilities.createType(
                 "Location",
                 "the_geom:Point:srid=4326,"
                         + // <- the geometry attribute: Point type
                         "name:String,"
                         + // <- a String attribute
                         "number:Integer" // a number attribute
-        );
+        );*/
+
 
         //设置scheme
         SimpleFeatureTypeBuilder b = new SimpleFeatureTypeBuilder();
@@ -46,7 +47,7 @@ public class FeatureTest {
         //存储数据
         Point point = geometryFactory.createPoint(new Coordinate(116.39622 ,40.027074));
         featureBuilder.set("location", point);
-        featureBuilder.set("name", "中关村一号");
+        featureBuilder.set("name", "五台山");
 
         //生成对象
         SimpleFeature simpleFeature = featureBuilder.buildFeature("010101");
