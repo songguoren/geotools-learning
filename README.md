@@ -1,6 +1,8 @@
 # 简介
 geotools从入门到简单使用教程
-
+# 源码地址
+[geotools](https://github.com/geotools/geotools)
+[项目jira地址](https://osgeo-org.atlassian.net/jira/projects)
 # 目录
 * [OGC基础](docs/learning-book/ogc/README.md)
   * [opengis简介](docs/learning-book/ogc/opengis.md)
